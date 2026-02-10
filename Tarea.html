@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ejercicio – Recetario</title>
+<style>
+  :root{
+    --borde:#c7d8cc;
+    --encabezado:#e7f2eb;
+    --franja:#cde6d7;
+    --fila-suave:#f7f9f8;
+    --texto:#1f2d2a;
+  }
+  *{box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--texto);margin:0;padding:24px;background:#fff}
+  h1{margin:0 0 16px;font-size:clamp(22px,4vw,34px);letter-spacing:.3px}
+  .tabla{width:100%;border-collapse:collapse;table-layout:fixed;border:2px solid var(--borde)}
+  .tabla th,.tabla td{vertical-align:top;padding:14px 12px;border:1px solid var(--borde)}
+  .tabla thead th{background:var(--encabezado);text-align:left;font-weight:700}
+  .col-receta{width:14ch}.col-pasos{width:26ch}.col-ingredientes{width:22ch}.col-descripcion{width:26ch}.col-detalles{width:auto}
+  ul{margin:.25rem 0 .25rem 1.1rem} li{margin:.15rem 0}
+  .nota{background:var(--franja);padding:10px 14px;border-radius:6px;font-size:.95rem;margin-top:8px}
+  .pie{margin-top:10px;padding:10px 14px;text-align:center;background:var(--franja);border:1px solid var(--borde);border-top:none;font-weight:600}
+  @media (max-width:820px){.tabla{table-layout:auto}.col-receta,.col-pasos,.col-ingredientes,.col-descripcion,.col-detalles{width:auto}}
+</style>
+</head>
+<body>
+  <h1>Ejercicio · Recetario</h1>
+
+  <table class="tabla" aria-describedby="pie">
+    <thead>
+      <tr>
+        <th class="col-receta">Receta</th>
+        <th class="col-pasos">Pasos</th>
+        <th class="col-ingredientes">Ingredientes</th>
+        <th class="col-descripcion">Descripción</th>
+        <th class="col-detalles">Imágenes y detalles</th>
+      </tr>
+    </thead>
+        <body>
+<table border="1px">
+  <h1>Ejercicio · Recetario</h1>
+  <table class="tabla" aria-describedby="pie">
+    <thead>
+      <tr>
+        <th class="col-receta">Receta</th>
+        <th class="col-pasos">Pasos</th>
+        <th class="col-ingredientes">Ingredientes</th>
+        <th class="col-descripcion">Descripción</th>
+        <th class="col-detalles">Imágenes y detalles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ensalada Fresca</td>
+        <td>
+          <ol style="margin:.25rem 0 .25rem 1.1rem;">
+            <li>Lavar vegetales</li>
+            <li>Cortar en trozos</li>
+            <li>Agregar aliño</li>
+          </ol>
+        </td>
+        <td>
+          <ul>
+            <li>Lechuga</li>
+            <li>Tomate</li>
+            <li>Queso feta</li>
+          </ul>
+        </td>
+        <td>
+          <p><strong>Sabor:</strong> Fresco y saludable</p>
+          <p><strong>Ideal para:</strong> Entrada ligera</p>
+        </td>
+        <td>
+          <figure style="margin:0 0 1px;">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop" alt="Ensalada completa" style="max-width:10%;height:auto;border-radius:6px;">
+            <figcaption style="font-size:.9rem;opacity:.8;"></figcaption>
+          </figure>
+          <div class="nota">
+            <strong>Ensalada completa</strong>
+            <ul>
+              <li>Lechuga fresca</li>
+              <li>lechuga fresca</li>
+              <dd><li>color verde vibrante</li></dd>
+              <dd><li>Textura crujiente</li></dd>
+              <dd><li>Frescura garantizada</li></dd>
+              <li>tomate maduro</li>
+              <li>tomate maduro</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Pasta al Pesto</td>
+        <td>
+          <ol style="margin:.25rem 0 .25rem 1.1rem;">
+            <li>Hervir pasta</li>
+            <li>Preparar salsa</li>
+            <li>Mezclar y servir</li>
+          </ol>
+        </td>
+        <td>
+          <ul>
+            <li>Pasta</li>
+            <li>Albahaca</li>
+            <li>Parmesano</li>
+          </ul>
+        </td>
+        <td>
+          <p><strong>Sabor:</strong> Aromático e intenso</p>
+          <p><strong>Dificultad:</strong> Baja</p>
+        </td>
+        <td>
+          <figure style="margin:0 0 8px;">
+          </figure>
+            <img src="https://thumbs.dreamstime.com/z/spaghetti-bolognese-pasta-italiana-servida-en-plato-negro-con-tomate-y-perejil-el-restaurante-comida-italiano-men%C3%BA-concepto-173302223.jpg" alt="Plato con pesto" style="max-width:10%;height:auto;border-radius:6px;">
+            <figcaption style="font-size:.9rem;opacity:.85;"></figcaption>
+          </figure>
+          <div class="nota">
+            <strong>Pasta servida</strong>
+            <ul>
+                <li>plato con pesto</li>
+              <li>Plato con pesto</li>
+              <li>Salsa casera</li>
+              <li>Queso parmesano rallado</li>
+              <li>Pasta al dente</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="background:var(--fila-suave);">Yogur con Fruta</td>
+        <td style="background:var(--fila-suave);">
+          <ol style="margin:.25rem 0 .25rem 1.1rem;">
+            <li>Servir yogur</li>
+            <li>Agregar frutas</li>
+            <li>Decorar con miel</li>
+          </ol>
+        </td>
+        <td style="background:var(--fila-suave);">
+          <ul>
+            <li>Yogur</li>
+            <li>Fresas</li>
+            <li>Miel</li>
+          </ul>
+        </td>
+        <td style="background:var(--fila-suave);">
+          <p><strong>Textura:</strong> Cremosa</p>
+          <p><strong>Beneficio:</strong> Refrescante y nutritivo</p>
+        </td>
+        <td style="background:var(--fila-suave);">
+          <figure style="margin:0 0 8px;">
+            
+            <figcaption style="font-size:.9rem;opacity:.85;"></figcaption>
+          </figure>
+          <div class="nota">
+                    <dd><li>yogur natural</li></dd>
+                    <dd>yogur natural</dd>
+                <li>frutas frescas</li>
+              <li>Frutas frescas</li>
+                    <dd><li>fresas</li></dd>
+                    <dd><li>moras</li></dd>
+                <li>arandanos</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="pie" class="pie">Fin del recetario. ¡Explora, cocina y disfruta!</div>
+</body>
+</html>
