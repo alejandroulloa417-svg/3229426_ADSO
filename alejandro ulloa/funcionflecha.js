@@ -2,7 +2,7 @@ function sumar(num1,num2) {
     return num1 + num2;
 }
 function saludar(nombre){
-    return "hola, " + nombre + "!";   
+    return "hola, " + nombre + "¿!";   
 }
 function multiplicacion(num1,num2){
     return num1 * num2;
